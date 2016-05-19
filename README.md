@@ -19,7 +19,7 @@ docker pull cpswan/node-red
 curl -k https://raw.githubusercontent.com/node-red/node-red/master/settings.js -o settings.js
 
 # In next command as a volume I've used location of git project location locally. 
-docker run --name=nodered -d -v /c/Users/miroslavresetar/git/mresetar-node-red:/root/.node-red -p 1881:1880 cpswan/node-red
+docker run --name=nodered -d -v /c/Users/miroslavresetar/git/alertbox-node-red:/root/.node-red -p 1881:1880 cpswan/node-red
 ```
 
 If you're using VM for container go to Node-RED flow by going to URL:
